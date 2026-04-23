@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -80,164 +79,93 @@
         body { font-family: 'Inter', sans-serif; background-color: #f9f9fc; color: #1a1c1e; -webkit-font-smoothing: antialiased; }
         .font-manrope { font-family: 'Manrope', sans-serif; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .hero-gradient { background: linear-gradient(to right, rgba(0, 41, 117, 0.9), rgba(0, 41, 117, 0.2)); }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 41, 117, 0.7), rgba(0, 41, 117, 0.4));
+        }
     </style>
 </head>
 <body class="bg-surface selection:bg-primary/10 selection:text-primary">
 <!-- Top Navigation Shell -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg shadow-sm">
-<div class="flex justify-between items-center px-12 py-6 max-w-full mx-auto">
+<nav class="fixed top-0 w-full z-50 h-16 flex items-center px-12">
+<div class="flex justify-between items-center w-full max-w-7xl mx-auto">
 <div class="text-2xl font-black tracking-tighter text-blue-900 uppercase font-headline">
-                RE/MAX COMMERCIAL
-            </div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-slate-600 font-medium hover:text-blue-800 transition-colors duration-300" href="#">Services</a>
-<a class="text-slate-600 font-medium hover:text-blue-800 transition-colors duration-300" href="#">Markets</a>
-<a class="text-slate-600 font-medium hover:text-blue-800 transition-colors duration-300" href="#">Track Record</a>
-<a class="text-slate-600 font-medium hover:text-blue-800 transition-colors duration-300" href="#">Insights</a>
-<a class="text-slate-600 font-medium hover:text-blue-800 transition-colors duration-300" href="#">Team</a>
+<img alt="RE/MAX COMMERCIAL" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugrbOtcrPgGlNXBTmo1B-H4zZxNVkY9sI4wDSlLOwuDuFthXqgKdcDJI7d0n-9cIo2N5IdQxiMONW8t7Zm3dkPa5doEfUs7z010lBiF7TnDuQobeUJ7g2jZPIRhK2YrK36JboBGYKLOmjcHuoAu36QZYsd28c4wI0kkUKdEJM_qqn1gdBHGEYmRnJ55BqYwa6vb__1z8gpZFMPkpADf06jF6erBDJY9vxeJNXPIPmqgu5QBx8IEqHwomxX4HRz6DPSpUqiGTHFDdg"/>
 </div>
-<button class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-3 rounded-xl font-label text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-all">
-                Get a Consultation
-            </button>
 </div>
 </nav>
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<section class="relative h-[800px] flex items-center pt-16 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img class="w-full h-full object-cover" data-alt="Modern architectural glass skyscraper reflecting blue sky with sharp angles and clean lines in high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA8PMenTEQU3Tk829Jh48MWrZjsCpQHAilFOkBeEI779Ikbl5vyEBel14ksJ5Ba6xp4c4Cu67bvV0dQl1uFjrWHt_jc6CsqA8VvxWWrgLorb2BLRHpni9yOMR0CSwRjSDtQkE6hOheh_Jy92Ap2ZHAPSAqEokYI4oV9TSw5sg82hhpVjEInWt8sayCPpHD5a-JMAM-ilQoJ30Q9LWLQ3CXw8XgavTKs9-Qt6F5vp2G8UnWT2ksiQLDopN9AiWKwyPbh2OrW0kCvqo"/>
 <div class="absolute inset-0 hero-gradient"></div>
 </div>
 <div class="relative z-10 px-12 max-w-7xl mx-auto w-full">
-<div class="max-w-3xl">
-<span class="inline-block px-4 py-1 mb-6 bg-secondary text-white text-xs font-bold tracking-widest uppercase rounded-full">Global No.1 Brand</span>
-<h1 class="text-white text-7xl font-extrabold font-headline leading-tight tracking-tighter mb-8">
-                    글로벌 No.1 <br/>부동산 브랜드
-                </h1>
-<p class="text-white/80 text-2xl font-light mb-12 max-w-xl">
-                    상업용 부동산 빅데이터 올인원 서비스. 인텔리전트한 분석과 글로벌 네트워크로 귀하의 자산 가치를 극대화합니다.
-                </p>
-<div class="flex space-x-6">
-<button class="bg-secondary text-white px-10 py-5 rounded-xl font-bold hover:scale-95 transition-all shadow-xl shadow-secondary/20">
-                        자문 상담 신청하기
-                    </button>
-<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-xl font-bold hover:bg-white/20 transition-all">
-                        사업 분야 둘러보기
-                    </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Global Stats Section -->
-<section class="bg-surface-container-low py-24 px-12">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
-<div class="space-y-2">
-<div class="text-secondary text-5xl font-extrabold font-headline">14년 연속</div>
-<div class="text-on-surface-variant font-medium tracking-wide uppercase text-sm">Real Trends 500 #1</div>
-</div>
-<div class="space-y-2">
-<div class="text-secondary text-5xl font-extrabold font-headline">110개국 이상</div>
-<div class="text-on-surface-variant font-medium tracking-wide uppercase text-sm">Global Presence</div>
-</div>
-<div class="space-y-2">
-<div class="text-secondary text-5xl font-extrabold font-headline">9,000+</div>
-<div class="text-on-surface-variant font-medium tracking-wide uppercase text-sm">글로벌 지사 네트워크</div>
-</div>
-<div class="space-y-2">
-<div class="text-secondary text-5xl font-extrabold font-headline">142,000+</div>
-<div class="text-on-surface-variant font-medium tracking-wide uppercase text-sm">최정예 전문 에이전트</div>
-</div>
-</div>
-</section>
-<!-- Services Section (Bento Grid Style) -->
-<section class="py-32 px-12 bg-surface">
-<div class="max-w-7xl mx-auto mb-20 flex justify-between items-end">
 <div class="max-w-2xl">
-<h2 class="text-5xl font-bold font-headline text-primary mb-6">Expert Services</h2>
-<p class="text-on-surface-variant text-lg">RE/MAX Commercial은 단순한 중개를 넘어 데이터 기반의 전략적 솔루션을 제안합니다.</p>
-</div>
-<a class="text-primary font-bold border-b-2 border-primary/20 pb-1 hover:border-primary transition-all" href="#">전체 서비스 보기</a>
-</div>
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="group bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-<div class="mb-8 w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" style="font-size: 32px;">business</span>
-</div>
-<h3 class="text-2xl font-bold font-headline text-primary mb-4">기업 서비스</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8">
-                    기업의 성장 단계에 맞춘 전략적 오피스 임대 및 임차 솔루션을 제공하며, 최적의 비즈니스 환경을 구축합니다.
+<span class="inline-block px-4 py-1 mb-6 bg-secondary text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-full">글로벌 No.1 부동산 브랜드</span>
+<h1 class="text-white text-6xl font-extrabold font-headline leading-tight tracking-tighter mb-8">
+                    상업용 부동산 <br/>빅데이터 올인원 서비스
+                </h1>
+<p class="text-white/90 text-xl font-medium mb-12 max-w-xl leading-relaxed">
+                    15.8초에 한번 리맥스와 전 세계 부동산이 연결됩니다.
                 </p>
-<ul class="space-y-3 text-sm font-medium text-slate-500">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 임대차 전략 수립</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 시장 분석 보고서</li>
-</ul>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-5 rounded-xl font-bold uppercase tracking-wider text-sm shadow-xl hover:opacity-90 transition-all active:scale-95">
+                        부동산 구하기
+                    </button>
+<button class="bg-white text-primary px-10 py-5 rounded-xl font-bold uppercase tracking-wider text-sm shadow-xl hover:bg-white/90 transition-all active:scale-95 border border-white/20">
+                        부동산 내놓기
+                    </button>
 </div>
-<!-- Card 2 -->
-<div class="group bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-<div class="mb-8 w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" style="font-size: 32px;">account_balance</span>
-</div>
-<h3 class="text-2xl font-bold font-headline text-primary mb-4">매입/매각 자문</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8">
-                    상업용 빌딩, 물류센터, 호텔 등 다양한 자산의 가치를 평가하고 성공적인 엑싯 및 취득을 지원합니다.
-                </p>
-<ul class="space-y-3 text-sm font-medium text-slate-500">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 가치 평가 (Appraisal)</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 투자 구조 설계</li>
-</ul>
-</div>
-<!-- Card 3 -->
-<div class="group bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-<div class="mb-8 w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" style="font-size: 32px;">apartment</span>
-</div>
-<h3 class="text-2xl font-bold font-headline text-primary mb-4">자산 관리</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8">
-                    공실 관리, 임대차 갱신, 시설 유지보수 등 자산 가치 향상을 위한 통합 PM(Property Management) 서비스를 제공합니다.
-                </p>
-<ul class="space-y-3 text-sm font-medium text-slate-500">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 임대 마케팅</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> 테넌트 믹스 최적화</li>
-</ul>
 </div>
 </div>
 </section>
-<!-- Track Record Section (Gallery Grid) -->
+<!-- Global Presence -->
+<section class="bg-white py-24 px-12">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-extrabold font-headline text-primary mb-4 tracking-tighter">Global Presence</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">전 세계 110개국 이상, 9,000여 개의 지사를 연결하는 압도적인 네트워크로 글로벌 시장의 기회를 선점합니다.</p>
+</div>
+<div class="max-w-5xl mx-auto">
+<img alt="RE/MAX Global Network Map" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugrimuS0xP21srQLZKZXEIUkM1z5oDRRIf_9dabTjGlw_mDCCgO2ZXmiCqNTBLL6ZUttRz1H46wAvK5eMTCWajxzKmp55DEochjLsycHFhPMLv90PIetKY8nH-UoR2hhEJZnjQSjMnkZq5Yt4HV3zScZGhgSlpQTC4Ak5Pxfp-xqlM0ZPPs-321KuShrAdVppuZlq_9OgoW9bZfX58R1FBis0tEI7KYMu5_-mjtZrwrRty0TrCPhfKmokppggfn71FEfWo2wGfWkQ"/>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto mb-16">
+<h2 class="text-5xl font-extrabold font-headline text-primary tracking-tighter mb-4">전문 서비스</h2>
+<div class="h-1.5 w-16 bg-secondary rounded-full"></div>
+<p class="text-on-surface-variant text-lg mt-8">RE/MAX Commercial은 글로벌 시장 전체에 걸친 전략적 솔루션을 제안하여 귀하의 자산 가치를 극대화합니다.</p>
+</div>
+<!-- Services Diagram -->
+<div class="max-w-5xl mx-auto p-6 bg-white rounded-3xl shadow-sm border border-outline-variant/30">
+<img alt="RE/MAX Expert Services Diagram" class="w-full h-auto object-contain rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhbMn1vfHIyEUZRY9R4cemLhIJYriGL2wzTf8KMhXH-iQP7WF1SOLu_Xf9eKmzGaFGGrg2maMhwB22FB3ZIfUCiv-AE8qFSr-0oKFrle3612QFJSaEtBiMVbSJ6pso0TXcAUYxB4lIHvliXjZ5TiIMvylogRoW89nsahDdux3wgE3QP5UdI260dxGfaZ9WvdZuK60RJdKkULdIF1VNLhI-ddeKwRAMSXrba-x1GqcP4WL002WvmuojnQ3TxqIVQmp5XaiVEeeVRrQ"/>
+</div>
+</section>
+<!-- Track Record Section -->
 <section class="py-32 px-12 bg-surface-container-low">
 <div class="max-w-7xl mx-auto mb-20 text-center">
-<h2 class="text-5xl font-bold font-headline text-primary mb-4">Track Record</h2>
-<p class="text-on-surface-variant max-w-xl mx-auto">글로벌 리맥스의 네트워크가 만들어낸 성공적인 포트폴리오를 확인하세요.</p>
+<h2 class="text-5xl font-extrabold font-headline text-primary tracking-tighter mb-4">주요 실적</h2>
+<p class="text-on-surface-variant">프리미엄 상업용 부동산 시장에서의 검증된 성공 사례입니다.</p>
 </div>
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-<div class="group">
-<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-lg">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist high-rise corporate building with glass facade in Seoul commercial district at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAodrYzgSCZjy8H5tHO0gq-H9VvZ0ELPzApqIw3bXtCG665ySTSzEeEr1u3arXAbIgRrr90xEG8cNzwlXzvalPlqVkUZmmAoeLdxOPM4ooluIPIqoN5aP1lRIW3_w-WzkMaYzo7yn6zKPj3gKGgweh0kk4iC5i03S5_wZnXPM231CnKjtB01zD_N4QDnfMU5aA-IsQHDJ8Ka5dDPnFSDTENBhwt8SaBCvXsG0Oo25_uR0hlaXUMTVtkoZmjDvOMgFfpPeKeFOyy_eo"/>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<div class="bg-white p-4 rounded-3xl shadow-sm border border-outline-variant/30 overflow-hidden">
+<img alt="Office Leasing Track Record" class="w-full h-auto object-contain rounded-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0ui7eMpMjYmjTaq4ZWInU4d06_p4aDXVUNQd7FoLjDGz4EgmmT8HGVgzGr9efQHGWSwsv_jbzgJ_TZSQydTEssjxYwkGqIj7WHAzOPX_xHDNmHf8Vqv9GfEI9mDZFlC1ZqK_rZkGjIzeFQ1j3eYqb-ScR5LLjKwizbOovjRld-7JDNlAIZwg1Ah6pPjKe7tiam2Dn9ukqE9-29qM3kKyvYvG3j9sMir62fvf8X21tNRXkd7u1mpwliwGR0U-K19ov4S5ATgIbCO1KA"/>
 </div>
-<div class="px-2">
-<span class="text-secondary text-xs font-bold tracking-widest uppercase">Office Tower</span>
-<h4 class="text-xl font-bold text-primary mt-2">강남 테헤란로 A급 빌딩 매각</h4>
-<p class="text-sm text-slate-500 mt-1">Transaction Value: 245B KRW</p>
-</div>
-</div>
-<div class="group">
-<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-lg">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Interior of a modern luxury commercial lobby with high ceilings and marble textures in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzyUy5xcEKTP3A1r6ErKllDKmBpr6L4ew4nL8jKLSYGEtfCoZQNz3F5momkZWd3e_N0H1AFDhvxCvqGgdbNyVN-U2N03BP0CB22ZjcLPUAjiJLFElVdbBSGAwKZ1Vc0iuVfwcAS3lkTrm1eCyWMeKPHJd-baVNDOGq2fm3UOuBmY3-csuaOSwBs4qZfCOB289OpSori0LcAjaWzZ-0MEgVV5iRnjc3Ew977D7ketLymc4HuJeY8dTXhUWS3gQTAu99AVs7qr88Mmg"/>
-</div>
-<div class="px-2">
-<span class="text-secondary text-xs font-bold tracking-widest uppercase">Logistics</span>
-<h4 class="text-xl font-bold text-primary mt-2">수도권 복합 물류센터 임대차 자문</h4>
-<p class="text-sm text-slate-500 mt-1">Total Floor Area: 45,000 sqm</p>
+<div class="text-center px-4">
+<h3 class="text-2xl font-bold text-primary font-headline">Office Leasing | 임대</h3>
+<p class="text-on-surface-variant mt-2">국내외 주요 랜드마크 오피스 빌딩 임대 실적</p>
 </div>
 </div>
-<div class="group">
-<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 shadow-lg">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Dynamic aerial view of a city business district with dense commercial infrastructure and green spaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWjfH9zcBnFkJbd0Ha3v_Bciw_uNfZEyd0R4nLZdBwB_VUzu-_rNo35iQ6dkE4Ir3NV6ICy5lQ02nSSoRLf-HDzrChT0Xa48dnber5qNXPMxzXwRgk9xTuY4SgLjigFXm10V1SOKkfwrtGApAqK66-cYakoBIOCnu5Y7Tvip0jnYrCHb3liKGn10mf0Z02zgamlf1-DwXvYlRVjNmarlagpASU89OHv7wLBi1f1ZDGKElZF39EXPNtG2t90bw_-rz3CFWQRKO7MuM"/>
+<div class="space-y-6">
+<div class="bg-white p-4 rounded-3xl shadow-sm border border-outline-variant/30 overflow-hidden">
+<img alt="Transaction Track Record" class="w-full h-auto object-contain rounded-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0ug3ZLKhqaarr5ec28zwIx6H4m8TQo639KKYESKlKCQsCN5POURtPlqxU2cbMRyLdj32rakCJpbOS30kHj0M65Zhrq_tYuVmq07UDujfkhMkqEx1wegjsXp3ZKAxCyIIgW8df6I6WO_qOWQAw9rzwBWtzxStRTy7MBR6eyZ60uc92N6S-pTJdZCg_Ic4wP2P_zugpYD0fF5QU_-tNf0P7eZLpxNSBnyfxUWhptM0_IsveTjkSKO0knGuDzmN4uqzEzKMRLrM4Y2Oqg"/>
 </div>
-<div class="px-2">
-<span class="text-secondary text-xs font-bold tracking-widest uppercase">Retail &amp; Hotel</span>
-<h4 class="text-xl font-bold text-primary mt-2">명동 5성급 호텔 자산관리 위탁</h4>
-<p class="text-sm text-slate-500 mt-1">Asset Management Portfolio</p>
+<div class="text-center px-4">
+<h3 class="text-2xl font-bold text-primary font-headline">Transaction | 매매</h3>
+<p class="text-on-surface-variant mt-2">상업용 빌딩 및 자산 매입·매각 자문 성공 사례</p>
 </div>
 </div>
 </div>
@@ -245,113 +173,119 @@
 <!-- Client Logos Section -->
 <section class="py-24 px-12 bg-white">
 <div class="max-w-7xl mx-auto">
-<p class="text-center text-on-surface-variant font-bold uppercase tracking-widest text-xs mb-16">Trusted by Industry Leaders</p>
-<div class="grid grid-cols-2 md:grid-cols-5 gap-12 opacity-40 grayscale hover:grayscale-0 transition-all">
-<div class="flex items-center justify-center h-12 text-2xl font-bold font-headline text-slate-400">GS건설</div>
-<div class="flex items-center justify-center h-12 text-2xl font-bold font-headline text-slate-400">삼성생명</div>
-<div class="flex items-center justify-center h-12 text-2xl font-bold font-headline text-slate-400">미래에셋</div>
-<div class="flex items-center justify-center h-12 text-2xl font-bold font-headline text-slate-400">하나금융</div>
-<div class="flex items-center justify-center h-12 text-2xl font-bold font-headline text-slate-400">신세계</div>
+<h3 class="font-headline text-2xl font-extrabold text-primary text-center mb-16 uppercase tracking-[0.15em]">주요 고객사</h3>
+<div class="max-w-5xl mx-auto">
+<img alt="RE/MAX Strategic Partners and Clients" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugP-02l7wxNBaZBjvyX7BBiw815wNmANuzLfMvWLTs3PbL8PArVo0KaH0FLjjV_nTRNKnpAM3af91eYKc3MhdVwBfnjKwC3MSMGubkXCNYh-N5ffU1Vyf9HSbDdOGgK9lYerBbrBSOusmTyMt-eqharjycurOq6ZkvRKwqBjPCJusUGTysgZr5TApTKDbnrzr19dRTHzsC3Sosc_cdQRIgaQnfEMlDSfEpUNJ3oQpZq6Gi1NR6nS3pXd8V6UUwQowIk4UAxW6Sh"/>
 </div>
 </div>
 </section>
 <!-- Contact Form Section -->
-<section class="py-32 px-12 bg-surface overflow-hidden relative">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+<section class="py-32 px-12 bg-primary text-white">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-start">
 <div class="w-full md:w-1/2">
-<h2 class="text-6xl font-bold font-headline text-primary mb-8 leading-tight">상업용 부동산의 <br/>새로운 기준을 세웁니다.</h2>
-<p class="text-on-surface-variant text-xl mb-12 font-light">RE/MAX의 전문가들이 귀하의 프로젝트에 전문성을 더해드립니다. 지금 바로 문의하세요.</p>
+<div class="inline-flex p-1 bg-white/10 rounded-xl mb-10">
+<button class="px-8 py-3 rounded-lg text-sm font-bold bg-secondary text-white transition-all" id="buy-tab-btn">부동산 구하기</button>
+<button class="px-8 py-3 rounded-lg text-sm font-bold text-white/60 hover:text-white transition-all" id="sell-tab-btn">부동산 내놓기</button>
+</div>
+<h2 class="text-5xl font-extrabold font-headline tracking-tighter mb-8 leading-tight" id="consultation-title">상담 신청하기</h2>
+<p class="text-primary-fixed-dim text-xl mb-12" id="consultation-desc">원하시는 최적의 상업용 매물을 찾아드립니다.</p>
 <div class="space-y-8">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary">phone_in_talk</span>
-<div>
-<div class="text-primary font-bold">대표 번호</div>
-<div class="text-on-surface-variant text-lg">02-123-4567</div>
+<!-- Representative Number and Email Inquiry removed as per request -->
 </div>
 </div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary">mail</span>
-<div>
-<div class="text-primary font-bold">이메일 문의</div>
-<div class="text-on-surface-variant text-lg">commercial@remax.co.kr</div>
-</div>
-</div>
-</div>
-</div>
-<div class="w-full md:w-1/2 bg-surface-container-lowest p-12 rounded-xl shadow-2xl relative">
+<div class="w-full md:w-1/2">
 <form class="space-y-6">
 <div class="grid grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold text-primary uppercase tracking-tighter">성함</label>
-<input class="w-full bg-surface-container-high border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="홍길동" type="text"/>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest mb-2 opacity-70">성함</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-4 text-white focus:outline-none focus:border-white transition-colors" placeholder="홍길동" type="text"/>
 </div>
-<div class="space-y-2">
-<label class="text-xs font-bold text-primary uppercase tracking-tighter">연락처</label>
-<input class="w-full bg-surface-container-high border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="010-0000-0000" type="tel"/>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest mb-2 opacity-70">연락처</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-4 text-white focus:outline-none focus:border-white transition-colors" placeholder="010-0000-0000" type="tel"/>
 </div>
 </div>
-<div class="space-y-2">
-<label class="text-xs font-bold text-primary uppercase tracking-tighter">문의 유형</label>
-<select class="w-full bg-surface-container-high border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none transition-all">
-<option>매입/매각 자문</option>
-<option>오피스 임차</option>
-<option>빌딩 자산관리</option>
-<option>기타 문의</option>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest mb-2 opacity-70" id="type-label">희망 매물 유형</label>
+<select class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-4 text-white focus:outline-none focus:border-white transition-colors appearance-none" id="category-select">
+<option class="text-on-surface">오피스/빌딩</option>
+<option class="text-on-surface">리테일/상가</option>
+<option class="text-on-surface">물류/창고</option>
+<option class="text-on-surface">토지/개발</option>
 </select>
 </div>
-<div class="space-y-2">
-<label class="text-xs font-bold text-primary uppercase tracking-tighter">문의 내용</label>
-<textarea class="w-full bg-surface-container-high border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="상세한 문의 내용을 입력해주세요." rows="4"></textarea>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest mb-2 opacity-70">문의 내용</label>
+<textarea class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-4 text-white focus:outline-none focus:border-white transition-colors" id="content-placeholder" placeholder="희망 지역, 예산, 면적 등 상세 조건을 입력해주세요." rows="4"></textarea>
 </div>
-<button class="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg hover:bg-primary-container shadow-xl shadow-primary/20 transition-all" type="submit">
-                        상담 신청하기
+<!-- Terms and Conditions Agreement Section -->
+<div class="space-y-3 bg-white/5 p-5 rounded-xl border border-white/10">
+<label class="block text-[10px] font-bold uppercase tracking-widest mb-2 opacity-70">약관 동의</label>
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded border-white/20 bg-white/10 text-secondary focus:ring-secondary focus:ring-offset-primary" id="personal-consent" type="checkbox"/>
+<label class="text-sm text-white/80 cursor-pointer" for="personal-consent">개인정보 수집 및 활용 동의 (필수)</label>
+</div>
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded border-white/20 bg-white/10 text-secondary focus:ring-secondary focus:ring-offset-primary" id="third-party-consent" type="checkbox"/>
+<label class="text-sm text-white/80 cursor-pointer" for="third-party-consent">제3자 개인 정보 동의 (필수)</label>
+</div>
+</div>
+<button class="w-full bg-secondary text-white py-5 rounded-xl font-black uppercase tracking-[0.2em] shadow-2xl hover:opacity-90 active:scale-95 transition-all" type="submit">
+                        무료 상담 신청하기
                     </button>
-<p class="text-[10px] text-slate-400 text-center uppercase tracking-widest">Global Authority in Real Estate Strategy</p>
+<p class="text-[10px] text-white/40 text-center uppercase tracking-widest mt-4">Global Authority in Real Estate Strategy</p>
 </form>
 </div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="w-full py-20 px-12 bg-slate-50">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-<div class="space-y-6">
-<div class="text-xl font-bold text-blue-900">RE/MAX Commercial</div>
-<p class="text-slate-500 text-sm leading-relaxed">전 세계 110개국 이상의 네트워크를 보유한 글로벌 부동산 시장의 리더. 당신의 가치를 더 높게, 당신의 투자를 더 가치있게 만듭니다.</p>
-</div>
-<div>
-<h5 class="text-blue-900 font-bold mb-6">Service</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">기업 자문</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">매입/매각 솔루션</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">임대 대행 서비스</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-blue-900 font-bold mb-6">Insights</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">시장 보고서</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">부동산 뉴스</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">글로벌 동향</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-blue-900 font-bold mb-6">Contact</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">인재 채용</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">고객 센터</a></li>
-<li><a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">찾아오시는 길</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-sm font-inter tracking-wide text-slate-500">
-                © 2024 RE/MAX Commercial. All rights reserved. Architectural Authority in Real Estate.
+<footer class="bg-slate-950 text-white pt-20 pb-12 px-12">
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-8">
+<div class="text-2xl font-black tracking-tighter text-blue-800 uppercase font-headline">
+                RE/MAX Commercial
             </div>
+<div class="text-slate-500 text-xs font-medium leading-relaxed max-w-2xl space-y-1">
+<p>주식회사 와이드파트너스 | 대표: 최윤석</p>
+<p>주식회사 와이드파트너스부동산중개법인 | 대표: 최윤석</p>
+<p>서울특별시 강남구 논현로 85길 57, 쌍마빌딩 3층</p>
+</div>
 <div class="flex gap-8">
-<a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">Privacy Policy</a>
-<a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">Terms of Service</a>
-<a class="text-slate-500 text-sm hover:text-blue-900 transition-all" href="#">Accessibility</a>
+<a class="text-slate-500 text-xs font-medium uppercase tracking-widest hover:text-white transition-colors" href="#">개인정보 처리방침</a>
+<a class="text-slate-500 text-xs font-medium uppercase tracking-widest hover:text-white transition-colors" href="#">이용약관</a>
+<a class="text-slate-500 text-xs font-medium uppercase tracking-widest hover:text-white transition-colors" href="#">Accessibility</a>
 </div>
 </div>
 </footer>
+<script>
+        const buyBtn = document.getElementById('buy-tab-btn');
+        const sellBtn = document.getElementById('sell-tab-btn');
+        const title = document.getElementById('consultation-title');
+        const desc = document.getElementById('consultation-desc');
+        const typeLabel = document.getElementById('type-label');
+        const contentPlaceholder = document.getElementById('content-placeholder');
+
+        buyBtn.addEventListener('click', () => {
+            buyBtn.classList.add('bg-secondary', 'text-white');
+            buyBtn.classList.remove('text-white/60');
+            sellBtn.classList.remove('bg-secondary', 'text-white');
+            sellBtn.classList.add('text-white/60');
+            
+            title.innerText = '부동산 구하기';
+            desc.innerText = '원하시는 최적의 상업용 매물을 찾아드립니다.';
+            typeLabel.innerText = '희망 매물 유형';
+            contentPlaceholder.placeholder = '희망 지역, 예산, 면적 등 상세 조건을 입력해주세요.';
+        });
+
+        sellBtn.addEventListener('click', () => {
+            sellBtn.classList.add('bg-secondary', 'text-white');
+            sellBtn.classList.remove('text-white/60');
+            buyBtn.classList.remove('bg-secondary', 'text-white');
+            buyBtn.classList.add('text-white/60');
+
+            title.innerText = '부동산 내놓기';
+            desc.innerText = '전문적인 자산 가치 분석을 통해 최고의 조건으로 매각을 도와드립니다.';
+            typeLabel.innerText = '매각 자산 유형';
+            contentPlaceholder.placeholder = '소재지, 현재 공실 현황, 희망 매각가 등 자산 정보를 입력해주세요.';
+        });
+    </script>
 </body></html>
